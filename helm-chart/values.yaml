@@ -65,8 +65,8 @@ adService:
       cpu: 200m
       memory: 180Mi
     limits:
-      cpu: 300m
-      memory: 300Mi
+      cpu: 1
+      memory: 1Gi
 
 cartService:
   create: true
@@ -76,8 +76,8 @@ cartService:
       cpu: 200m
       memory: 64Mi
     limits:
-      cpu: 300m
-      memory: 128Mi
+      cpu: 1
+      memory: 1Gi
 
 checkoutService:
   create: true
@@ -87,8 +87,8 @@ checkoutService:
       cpu: 100m
       memory: 64Mi
     limits:
-      cpu: 200m
-      memory: 128Mi
+      cpu: 1
+      memory: 1Gi
 
 currencyService:
   create: true
@@ -98,8 +98,8 @@ currencyService:
       cpu: 100m
       memory: 64Mi
     limits:
-      cpu: 200m
-      memory: 128Mi
+      cpu: 1
+      memory: 1Gi
 
 emailService:
   create: true
@@ -109,8 +109,8 @@ emailService:
       cpu: 100m
       memory: 64Mi
     limits:
-      cpu: 200m
-      memory: 128Mi
+      cpu: 1
+      memory: 1Gi
 
 frontend:
   create: true
@@ -132,11 +132,11 @@ frontend:
       labelValue: ingressgateway
   resources:
     requests:
-      cpu: 100m
-      memory: 64Mi
+      cpu: 500m
+      memory: 512Mi
     limits:
-      cpu: 200m
-      memory: 128Mi
+      cpu: 1
+      memory: 1Gi
 
 loadGenerator:
   create: true
@@ -147,8 +147,8 @@ loadGenerator:
       cpu: 300m
       memory: 256Mi
     limits:
-      cpu: 500m
-      memory: 512Mi
+      cpu: 2
+      memory: 2Gi
 
 paymentService:
   create: true
@@ -158,8 +158,8 @@ paymentService:
       cpu: 100m
       memory: 64Mi
     limits:
-      cpu: 200m
-      memory: 128Mi
+      cpu: 1
+      memory: 1Gi
 
 productCatalogService:
   create: true
@@ -171,8 +171,8 @@ productCatalogService:
       cpu: 100m
       memory: 64Mi
     limits:
-      cpu: 200m
-      memory: 128Mi
+      cpu: 1
+      memory: 1Gi
 
 recommendationService:
   create: true
@@ -182,8 +182,8 @@ recommendationService:
       cpu: 100m
       memory: 220Mi
     limits:
-      cpu: 200m
-      memory: 450Mi
+      cpu: 1
+      memory: 1Gi
 
 shippingService:
   create: true
@@ -193,8 +193,8 @@ shippingService:
       cpu: 100m
       memory: 64Mi
     limits:
-      cpu: 200m
-      memory: 128Mi
+      cpu: 1
+      memory: 1Gi
 
 cartDatabase:
   # Specifies the type of the cartservice's database, could be either redis or spanner.
